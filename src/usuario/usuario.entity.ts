@@ -2,6 +2,9 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Usuario {
+  password(senha: string, password: any) {
+      throw new Error('Method not implemented.');
+  }
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -19,5 +22,7 @@ export class Usuario {
 
   @Column({length: 14})
   cpf: string;
-  
+
+  @Column({length: 14})
+  data: string;
 }
