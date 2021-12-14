@@ -15,8 +15,7 @@ export class UsuarioController {
 
   @Post('cadastrar')
   async cadastrar(@Body() data: UsuarioCadastrarDto): Promise<ResultadoDto>{
-    
     return this.usuarioService.cadastrar(data)
-   
+      
 }
 }

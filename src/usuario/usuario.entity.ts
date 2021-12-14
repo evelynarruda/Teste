@@ -20,6 +20,4 @@ export class Usuario {
   @Column({length: 14})
   cpf: string;
   
-  @Column()
-  postagem: string;
 }
